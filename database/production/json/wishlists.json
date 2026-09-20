@@ -1,0 +1,50 @@
+[
+  {
+    "id": "wl-1",
+    "user_id": "user-traveler-01",
+    "listing_id": "1691037109183389304",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-2",
+    "user_id": "user-traveler-01",
+    "listing_id": "1695552006840774582",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-3",
+    "user_id": "user-traveler-01",
+    "listing_id": "1481622920131734652",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-4",
+    "user_id": "user-traveler-01",
+    "listing_id": "1760010029508205927",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-5",
+    "user_id": "user-traveler-01",
+    "listing_id": "1228946900095755420",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-6",
+    "user_id": "user-traveler-01",
+    "listing_id": "1751275425329946440",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-7",
+    "user_id": "user-traveler-01",
+    "listing_id": "1166396467631069255",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-8",
+    "user_id": "user-traveler-01",
+    "listing_id": "863553424795864668",
+    "created_at": "2026-09-20T12:00:00Z"
+  }
+]

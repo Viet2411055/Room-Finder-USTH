@@ -1,0 +1,311 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận 1",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.7
+            ],
+            [
+              106.78,
+              10.7
+            ],
+            [
+              106.78,
+              10.72
+            ],
+            [
+              106.6,
+              10.72
+            ],
+            [
+              106.6,
+              10.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận 3",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.72
+            ],
+            [
+              106.78,
+              10.72
+            ],
+            [
+              106.78,
+              10.74
+            ],
+            [
+              106.6,
+              10.74
+            ],
+            [
+              106.6,
+              10.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận 4",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.74
+            ],
+            [
+              106.78,
+              10.74
+            ],
+            [
+              106.78,
+              10.76
+            ],
+            [
+              106.6,
+              10.76
+            ],
+            [
+              106.6,
+              10.74
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận 7",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.76
+            ],
+            [
+              106.78,
+              10.76
+            ],
+            [
+              106.78,
+              10.78
+            ],
+            [
+              106.6,
+              10.78
+            ],
+            [
+              106.6,
+              10.76
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận 10",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.78
+            ],
+            [
+              106.78,
+              10.78
+            ],
+            [
+              106.78,
+              10.8
+            ],
+            [
+              106.6,
+              10.8
+            ],
+            [
+              106.6,
+              10.78
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Bình Thạnh",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.8
+            ],
+            [
+              106.78,
+              10.8
+            ],
+            [
+              106.78,
+              10.82
+            ],
+            [
+              106.6,
+              10.82
+            ],
+            [
+              106.6,
+              10.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Phú Nhuận",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.82
+            ],
+            [
+              106.78,
+              10.82
+            ],
+            [
+              106.78,
+              10.84
+            ],
+            [
+              106.6,
+              10.84
+            ],
+            [
+              106.6,
+              10.82
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Thành phố Thủ Đức",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.84
+            ],
+            [
+              106.78,
+              10.84
+            ],
+            [
+              106.78,
+              10.86
+            ],
+            [
+              106.6,
+              10.86
+            ],
+            [
+              106.6,
+              10.84
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Tân Bình",
+        "neighbourhood_group": "Thành phố Hồ Chí Minh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.6,
+              10.86
+            ],
+            [
+              106.78,
+              10.86
+            ],
+            [
+              106.78,
+              10.88
+            ],
+            [
+              106.6,
+              10.88
+            ],
+            [
+              106.6,
+              10.86
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

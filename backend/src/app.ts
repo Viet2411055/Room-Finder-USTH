@@ -1,0 +1,28 @@
+import express from 'express';
+import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import { env } from './shared/config/env.js';
+import { errorHandler } from './shared/errors/app-error.js';
+import { authRouter } from './features/auth/auth.routes.js';
+import { roomRouter } from './features/rooms/room.routes.js';
+import { bookingRouter } from './features/bookings/booking.routes.js';
+import { reviewRouter } from './features/reviews/review.routes.js';
+import { userRouter } from './features/users/user.routes.js';
+import { wishlistRouter } from './features/wishlists/wishlist.routes.js';
+import { hostRouter } from './features/hosts/host.routes.js';
+
+export const app = express();
+app.disable('x-powered-by');
+app.use(cors({ origin: env.FRONTEND_ORIGIN, credentials: true }));
+app.use(express.json({ limit: '1mb' }));
+app.use(cookieParser());
+app.get('/api/v1/health', (_req, res) => res.json({ data: { status: 'ok' } }));
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/rooms', roomRouter);
+app.use('/api/v1', bookingRouter);
+app.use('/api/v1', reviewRouter);
+app.use('/api/v1', userRouter);
+app.use('/api/v1', wishlistRouter);
+app.use('/api/v1', hostRouter);
+app.use((_req, res) => res.status(404).json({ error: { code: 'NOT_FOUND', message: 'Không tìm thấy endpoint' } }));
+app.use(errorHandler);

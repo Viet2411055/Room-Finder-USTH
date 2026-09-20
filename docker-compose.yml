@@ -1,0 +1,52 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: roomfinder
+      MYSQL_USER: roomfinder
+      MYSQL_PASSWORD: roomfinder
+      MYSQL_ROOT_PASSWORD: root_password_change_me
+    volumes: [mysql_data:/var/lib/mysql]
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot_password_change_me"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  backend:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3001
+      DATABASE_URL: mysql://roomfinder:roomfinder@mysql:3306/roomfinder
+      SEED_DATA_DIR: /app/database/production/json
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:?JWT_ACCESS_SECRET is required}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:?JWT_REFRESH_SECRET is required}
+      FRONTEND_ORIGIN: http://localhost:8088
+      COOKIE_SECURE: "false"
+      GMAIL_CLIENT_ID: ${GMAIL_CLIENT_ID:-}
+      GMAIL_CLIENT_SECRET: ${GMAIL_CLIENT_SECRET:-}
+      GMAIL_REFRESH_TOKEN: ${GMAIL_REFRESH_TOKEN:-}
+      GMAIL_SENDER: ${GMAIL_SENDER:-}
+      EMAIL_WORKER_ENABLED: "true"
+    depends_on:
+      mysql: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3001/api/v1/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  frontend:
+    build: { context: ., dockerfile: frontend/Dockerfile }
+    restart: unless-stopped
+    ports: ["${ROOMFINDER_PORT:-8088}:80"]
+    depends_on:
+      backend: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+volumes:
+  mysql_data:

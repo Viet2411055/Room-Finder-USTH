@@ -1,0 +1,209 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Hải Châu",
+        "neighbourhood_group": "Đà Nẵng"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108.15,
+              15.95
+            ],
+            [
+              108.3,
+              15.95
+            ],
+            [
+              108.3,
+              15.9833
+            ],
+            [
+              108.15,
+              15.9833
+            ],
+            [
+              108.15,
+              15.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Sơn Trà",
+        "neighbourhood_group": "Đà Nẵng"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108.15,
+              15.9833
+            ],
+            [
+              108.3,
+              15.9833
+            ],
+            [
+              108.3,
+              16.0166
+            ],
+            [
+              108.15,
+              16.0166
+            ],
+            [
+              108.15,
+              15.9833
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Ngũ Hành Sơn",
+        "neighbourhood_group": "Đà Nẵng"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108.15,
+              16.0167
+            ],
+            [
+              108.3,
+              16.0167
+            ],
+            [
+              108.3,
+              16.05
+            ],
+            [
+              108.15,
+              16.05
+            ],
+            [
+              108.15,
+              16.0167
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Thanh Khê",
+        "neighbourhood_group": "Đà Nẵng"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108.15,
+              16.05
+            ],
+            [
+              108.3,
+              16.05
+            ],
+            [
+              108.3,
+              16.0833
+            ],
+            [
+              108.15,
+              16.0833
+            ],
+            [
+              108.15,
+              16.05
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Cẩm Lệ",
+        "neighbourhood_group": "Đà Nẵng"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108.15,
+              16.0833
+            ],
+            [
+              108.3,
+              16.0833
+            ],
+            [
+              108.3,
+              16.1166
+            ],
+            [
+              108.15,
+              16.1166
+            ],
+            [
+              108.15,
+              16.0833
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Liên Chiểu",
+        "neighbourhood_group": "Đà Nẵng"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108.15,
+              16.1167
+            ],
+            [
+              108.3,
+              16.1167
+            ],
+            [
+              108.3,
+              16.15
+            ],
+            [
+              108.15,
+              16.15
+            ],
+            [
+              108.15,
+              16.1167
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

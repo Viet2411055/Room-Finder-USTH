@@ -1,0 +1,184 @@
+@import '@maptiler/sdk/dist/maptiler-sdk.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #FF385C;
+  --primary-hover: #E00B41;
+  --surface-canvas: #FFFFFF;
+  --surface-subtle: #F7F7F7;
+  --border-hairline: #EBEBEB;
+  --border-default: #DDDDDD;
+  --text-primary: #222222;
+  --text-secondary: #717171;
+  --radius-card: 16px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: var(--text-primary);
+  background-color: var(--surface-canvas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Airbnb scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* MapTiler / MapLibre Custom Marker styling */
+.maplibregl-marker {
+  overflow: visible !important;
+  cursor: pointer;
+}
+.custom-maptiler-marker {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  overflow: visible !important;
+}
+
+/* --- transitions.dev Micro-Interactions --- */
+
+/* 1. t-like-button: Like button pop + heart burst */
+.t-like-button {
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.t-like-button:active {
+  transform: scale(0.85);
+}
+.t-like-button.liked svg {
+  animation: heartBurst 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes heartBurst {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 2. t-card-hover: 3D-feel subtle hover lift */
+.t-card-hover {
+  transition: transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.25s cubic-bezier(0.2, 0, 0, 1);
+}
+.t-card-hover:hover {
+  transform: translateY(-3px);
+}
+
+/* 3. t-tabs-sliding: Segmented control sliding pill indicator */
+.t-tab-pill {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 4. t-modal: Scale-up dialog with soft backdrop blur */
+.t-modal-backdrop {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.t-modal-content {
+  animation: scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* 5. t-dropdown: Menu grow from trigger */
+.t-dropdown {
+  transform-origin: top right;
+  animation: dropdownGrow 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes dropdownGrow {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* 6. t-success-check: Celebration stroke draw */
+.t-success-check svg path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawCheck 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards 0.2s;
+}
+
+@keyframes drawCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* 7. t-skeleton-shimmer */
+.t-skeleton-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Smooth snap horizontal scrolling for BentoGrid */
+.bento-scroll-container {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.bento-scroll-item {
+  scroll-snap-align: start;
+}

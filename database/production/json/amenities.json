@@ -1,0 +1,231 @@
+{
+  "categories": [
+    {
+      "id": "cat-essentials",
+      "name": "Tiện nghi cơ bản",
+      "icon": "Wifi",
+      "display_order": 1
+    },
+    {
+      "id": "cat-bathroom",
+      "name": "Phòng tắm & Giặt là",
+      "icon": "Bath",
+      "display_order": 2
+    },
+    {
+      "id": "cat-kitchen",
+      "name": "Bếp & Ăn uống",
+      "icon": "Utensils",
+      "display_order": 3
+    },
+    {
+      "id": "cat-facilities",
+      "name": "Tiện ích & Giải trí",
+      "icon": "Tv",
+      "display_order": 4
+    },
+    {
+      "id": "cat-safety",
+      "name": "An toàn & An ninh",
+      "icon": "ShieldCheck",
+      "display_order": 5
+    },
+    {
+      "id": "cat-services",
+      "name": "Dịch vụ & Tự nhận phòng",
+      "icon": "Key",
+      "display_order": 6
+    }
+  ],
+  "items": [
+    {
+      "id": "amenity-wifi",
+      "category_id": "cat-essentials",
+      "name": "Wi-fi",
+      "code": "wifi",
+      "icon": "Wifi"
+    },
+    {
+      "id": "amenity-ac",
+      "category_id": "cat-essentials",
+      "name": "Điều hòa nhiệt độ",
+      "code": "air_conditioning",
+      "icon": "Wind"
+    },
+    {
+      "id": "amenity-workspace",
+      "category_id": "cat-essentials",
+      "name": "Không gian riêng để làm việc",
+      "code": "workspace",
+      "icon": "Laptop"
+    },
+    {
+      "id": "amenity-tv",
+      "category_id": "cat-essentials",
+      "name": "TV",
+      "code": "tv",
+      "icon": "Tv"
+    },
+    {
+      "id": "amenity-linens",
+      "category_id": "cat-essentials",
+      "name": "Khăn tắm, ga trải giường",
+      "code": "linens",
+      "icon": "Bed"
+    },
+    {
+      "id": "amenity-iron",
+      "category_id": "cat-essentials",
+      "name": "Bàn là",
+      "code": "iron",
+      "icon": "Zap"
+    },
+    {
+      "id": "amenity-hairdryer",
+      "category_id": "cat-bathroom",
+      "name": "Máy sấy tóc",
+      "code": "hair_dryer",
+      "icon": "Wind"
+    },
+    {
+      "id": "amenity-washer",
+      "category_id": "cat-bathroom",
+      "name": "Máy giặt",
+      "code": "washer",
+      "icon": "Shirt"
+    },
+    {
+      "id": "amenity-dryer",
+      "category_id": "cat-bathroom",
+      "name": "Máy sấy quần áo",
+      "code": "dryer",
+      "icon": "Sun"
+    },
+    {
+      "id": "amenity-hotwater",
+      "category_id": "cat-bathroom",
+      "name": "Nước nóng",
+      "code": "hot_water",
+      "icon": "Flame"
+    },
+    {
+      "id": "amenity-shampoo",
+      "category_id": "cat-bathroom",
+      "name": "Dầu gội và sữa tắm",
+      "code": "shampoo",
+      "icon": "Droplet"
+    },
+    {
+      "id": "amenity-bathtub",
+      "category_id": "cat-bathroom",
+      "name": "Bồn tắm ngâm",
+      "code": "bathtub",
+      "icon": "Bath"
+    },
+    {
+      "id": "amenity-kitchen",
+      "category_id": "cat-kitchen",
+      "name": "Nhà bếp",
+      "code": "kitchen",
+      "icon": "Utensils"
+    },
+    {
+      "id": "amenity-fridge",
+      "category_id": "cat-kitchen",
+      "name": "Tủ lạnh",
+      "code": "refrigerator",
+      "icon": "Archive"
+    },
+    {
+      "id": "amenity-microwave",
+      "category_id": "cat-kitchen",
+      "name": "Lò vi sóng",
+      "code": "microwave",
+      "icon": "Box"
+    },
+    {
+      "id": "amenity-cookware",
+      "category_id": "cat-kitchen",
+      "name": "Nồi, chảo, gia vị cơ bản",
+      "code": "cookware",
+      "icon": "Coffee"
+    },
+    {
+      "id": "amenity-kettle",
+      "category_id": "cat-kitchen",
+      "name": "Ấm đun nước siêu tốc",
+      "code": "kettle",
+      "icon": "Coffee"
+    },
+    {
+      "id": "amenity-pool",
+      "category_id": "cat-facilities",
+      "name": "Bể bơi",
+      "code": "pool",
+      "icon": "Waves"
+    },
+    {
+      "id": "amenity-parking",
+      "category_id": "cat-facilities",
+      "name": "Chỗ đỗ xe miễn phí trong khuôn viên",
+      "code": "free_parking",
+      "icon": "Car"
+    },
+    {
+      "id": "amenity-elevator",
+      "category_id": "cat-facilities",
+      "name": "Thang máy",
+      "code": "elevator",
+      "icon": "ArrowUpCircle"
+    },
+    {
+      "id": "amenity-gym",
+      "category_id": "cat-facilities",
+      "name": "Phòng tập thể dục (Gym)",
+      "code": "gym",
+      "icon": "Dumbbell"
+    },
+    {
+      "id": "amenity-balcony",
+      "category_id": "cat-facilities",
+      "name": "Ban công riêng thoáng mát",
+      "code": "balcony",
+      "icon": "Sun"
+    },
+    {
+      "id": "amenity-smoke",
+      "category_id": "cat-safety",
+      "name": "Máy báo khói",
+      "code": "smoke_alarm",
+      "icon": "AlertTriangle"
+    },
+    {
+      "id": "amenity-firstaid",
+      "category_id": "cat-safety",
+      "name": "Hộp sơ cứu",
+      "code": "first_aid",
+      "icon": "PlusSquare"
+    },
+    {
+      "id": "amenity-extinguisher",
+      "category_id": "cat-safety",
+      "name": "Bình chữa cháy",
+      "code": "fire_extinguisher",
+      "icon": "Shield"
+    },
+    {
+      "id": "amenity-selfcheckin",
+      "category_id": "cat-services",
+      "name": "Tự nhận phòng với khóa thông minh",
+      "code": "self_checkin",
+      "icon": "Key"
+    },
+    {
+      "id": "amenity-luggage",
+      "category_id": "cat-services",
+      "name": "Cho phép gửi hành lý trước giờ",
+      "code": "luggage_dropoff",
+      "icon": "Package"
+    }
+  ]
+}

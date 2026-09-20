@@ -1,0 +1,182 @@
+[
+  {
+    "id": "city-hanoi",
+    "name": "Hà Nội",
+    "slug": "ha-noi",
+    "country": "Việt Nam",
+    "latitude": 21.028511,
+    "longitude": 105.854167,
+    "image_url": "https://images.unsplash.com/photo-1509030450996-9321c8b939f6?auto=format&fit=crop&w=800&q=80",
+    "districts": [
+      {
+        "id": "dist-hn-01",
+        "name": "Quận Ba Đình",
+        "slug": "quan-ba-dinh",
+        "lat": 21.0341,
+        "lon": 105.8239
+      },
+      {
+        "id": "dist-hn-02",
+        "name": "Quận Hoàn Kiếm",
+        "slug": "quan-hoan-kiem",
+        "lat": 21.0292,
+        "lon": 105.8524
+      },
+      {
+        "id": "dist-hn-03",
+        "name": "Quận Tây Hồ",
+        "slug": "quan-tay-ho",
+        "lat": 21.0717,
+        "lon": 105.8228
+      },
+      {
+        "id": "dist-hn-04",
+        "name": "Quận Đống Đa",
+        "slug": "quan-dong-da",
+        "lat": 21.0181,
+        "lon": 105.8299
+      },
+      {
+        "id": "dist-hn-05",
+        "name": "Quận Hai Bà Trưng",
+        "slug": "quan-hai-ba-trung",
+        "lat": 21.0084,
+        "lon": 105.8569
+      },
+      {
+        "id": "dist-hn-06",
+        "name": "Quận Cầu Giấy",
+        "slug": "quan-cau-giay",
+        "lat": 21.0313,
+        "lon": 105.7938
+      },
+      {
+        "id": "dist-hn-07",
+        "name": "Quận Thanh Xuân",
+        "slug": "quan-thanh-xuan",
+        "lat": 20.9937,
+        "lon": 105.8115
+      }
+    ]
+  },
+  {
+    "id": "city-danang",
+    "name": "Đà Nẵng",
+    "slug": "da-nang",
+    "country": "Việt Nam",
+    "latitude": 16.054407,
+    "longitude": 108.202167,
+    "image_url": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80",
+    "districts": [
+      {
+        "id": "dist-dn-01",
+        "name": "Quận Hải Châu",
+        "slug": "quan-hai-chau",
+        "lat": 16.0538,
+        "lon": 108.2208
+      },
+      {
+        "id": "dist-dn-02",
+        "name": "Quận Sơn Trà",
+        "slug": "quan-son-tra",
+        "lat": 16.0825,
+        "lon": 108.2435
+      },
+      {
+        "id": "dist-dn-03",
+        "name": "Quận Thanh Khê",
+        "slug": "quan-thanh-khe",
+        "lat": 16.0601,
+        "lon": 108.1884
+      },
+      {
+        "id": "dist-dn-04",
+        "name": "Quận Ngũ Hành Sơn",
+        "slug": "quan-ngu-hanh-son",
+        "lat": 16.0025,
+        "lon": 108.2562
+      },
+      {
+        "id": "dist-dn-05",
+        "name": "Quận Liên Chiểu",
+        "slug": "quan-lien-chieu",
+        "lat": 16.0831,
+        "lon": 108.1481
+      }
+    ]
+  },
+  {
+    "id": "city-hcmc",
+    "name": "Hồ Chí Minh",
+    "slug": "ho-chi-minh",
+    "country": "Việt Nam",
+    "latitude": 10.776889,
+    "longitude": 106.700806,
+    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=800&q=80",
+    "districts": [
+      {
+        "id": "dist-hcm-01",
+        "name": "Quận 1",
+        "slug": "quan-1",
+        "lat": 10.7756,
+        "lon": 106.7004
+      },
+      {
+        "id": "dist-hcm-02",
+        "name": "Quận 3",
+        "slug": "quan-3",
+        "lat": 10.7844,
+        "lon": 106.6844
+      },
+      {
+        "id": "dist-hcm-03",
+        "name": "Quận 4",
+        "slug": "quan-4",
+        "lat": 10.7644,
+        "lon": 106.7042
+      },
+      {
+        "id": "dist-hcm-04",
+        "name": "Quận 5",
+        "slug": "quan-5",
+        "lat": 10.7554,
+        "lon": 106.6669
+      },
+      {
+        "id": "dist-hcm-05",
+        "name": "Quận 7",
+        "slug": "quan-7",
+        "lat": 10.734,
+        "lon": 106.7218
+      },
+      {
+        "id": "dist-hcm-06",
+        "name": "Quận 10",
+        "slug": "quan-10",
+        "lat": 10.7716,
+        "lon": 106.6672
+      },
+      {
+        "id": "dist-hcm-07",
+        "name": "Quận Tân Bình",
+        "slug": "quan-tan-binh",
+        "lat": 10.7992,
+        "lon": 106.6541
+      },
+      {
+        "id": "dist-hcm-08",
+        "name": "Quận Bình Thạnh",
+        "slug": "quan-binh-thanh",
+        "lat": 10.803,
+        "lon": 106.7099
+      },
+      {
+        "id": "dist-hcm-09",
+        "name": "Quận Phú Nhuận",
+        "slug": "quan-phu-nhuan",
+        "lat": 10.7997,
+        "lon": 106.6803
+      }
+    ]
+  }
+]

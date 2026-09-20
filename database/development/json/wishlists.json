@@ -1,0 +1,26 @@
+[
+  {
+    "id": "wl-1",
+    "user_id": "user-traveler-01",
+    "listing_id": "1537600565295118282",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-2",
+    "user_id": "user-traveler-01",
+    "listing_id": "1037295548548050014",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-3",
+    "user_id": "user-traveler-01",
+    "listing_id": "1375138608739963656",
+    "created_at": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "wl-4",
+    "user_id": "user-traveler-01",
+    "listing_id": "1650396724173490569",
+    "created_at": "2026-09-20T12:00:00Z"
+  }
+]

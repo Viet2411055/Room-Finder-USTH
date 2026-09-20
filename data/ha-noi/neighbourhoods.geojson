@@ -1,0 +1,311 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Hoàn Kiếm",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              20.95
+            ],
+            [
+              105.9,
+              20.95
+            ],
+            [
+              105.9,
+              20.9722
+            ],
+            [
+              105.75,
+              20.9722
+            ],
+            [
+              105.75,
+              20.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Ba Đình",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              20.9722
+            ],
+            [
+              105.9,
+              20.9722
+            ],
+            [
+              105.9,
+              20.9944
+            ],
+            [
+              105.75,
+              20.9944
+            ],
+            [
+              105.75,
+              20.9722
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Tây Hồ",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              20.9944
+            ],
+            [
+              105.9,
+              20.9944
+            ],
+            [
+              105.9,
+              21.0166
+            ],
+            [
+              105.75,
+              21.0166
+            ],
+            [
+              105.75,
+              20.9944
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Hai Bà Trưng",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              21.0167
+            ],
+            [
+              105.9,
+              21.0167
+            ],
+            [
+              105.9,
+              21.0389
+            ],
+            [
+              105.75,
+              21.0389
+            ],
+            [
+              105.75,
+              21.0167
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Đống Đa",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              21.0389
+            ],
+            [
+              105.9,
+              21.0389
+            ],
+            [
+              105.9,
+              21.0611
+            ],
+            [
+              105.75,
+              21.0611
+            ],
+            [
+              105.75,
+              21.0389
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Cầu Giấy",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              21.0611
+            ],
+            [
+              105.9,
+              21.0611
+            ],
+            [
+              105.9,
+              21.0833
+            ],
+            [
+              105.75,
+              21.0833
+            ],
+            [
+              105.75,
+              21.0611
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Nam Từ Liêm",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              21.0833
+            ],
+            [
+              105.9,
+              21.0833
+            ],
+            [
+              105.9,
+              21.1055
+            ],
+            [
+              105.75,
+              21.1055
+            ],
+            [
+              105.75,
+              21.0833
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Bắc Từ Liêm",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              21.1056
+            ],
+            [
+              105.9,
+              21.1056
+            ],
+            [
+              105.9,
+              21.1278
+            ],
+            [
+              105.75,
+              21.1278
+            ],
+            [
+              105.75,
+              21.1056
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "neighbourhood": "Quận Thanh Xuân",
+        "neighbourhood_group": "Hà Nội"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.75,
+              21.1278
+            ],
+            [
+              105.9,
+              21.1278
+            ],
+            [
+              105.9,
+              21.15
+            ],
+            [
+              105.75,
+              21.15
+            ],
+            [
+              105.75,
+              21.1278
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+**/node_modules/
+**/dist/
+**/.vite/
+client_secret*.json
+*.log
+.DS_Store
+mem.md
+bug/
+.commandcode/

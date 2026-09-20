@@ -1,0 +1,10 @@
+.git
+.env
+.env.*
+client_secret*.json
+**/node_modules
+**/dist
+**/.vite
+frontend/src/data/mock
+data
+listings_vietnam.*
