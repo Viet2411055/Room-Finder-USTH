@@ -708,6 +708,74 @@ Switch to Traveling ──> /
 
 ------------------------------------------------------------------------
 
+# FRAME 26 --- `/verify-email` --- Email Verification OTP
+
+``` text
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                                      ROOMFINDER                                       │
+│                                                                                       │
+│                                    [ SHIELD ICON ]                                    │
+│                               KIỂM TRA EMAIL CỦA BẠN                                  │
+│                                                                                       │
+│                     Mã xác thực đã gửi tới du********@domain                         │
+│                                                                                       │
+│                         [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ]                         │
+│                                                                                       │
+│                              [ Xác thực tài khoản ]                                   │
+│                                                                                       │
+│                         Chưa nhận mã? Gửi lại sau 60s                                 │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+``` text
+Valid OTP ──> Auth cookies ──> Landing
+Invalid/expired OTP ──> Inline error
+Resend ──> New OTP + restart countdown
+```
+
+------------------------------------------------------------------------
+
+# FRAME 27 --- `/reset-password` --- OTP & New Password
+
+``` text
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                                      ROOMFINDER                                       │
+│                                                                                       │
+│                                 ĐẶT LẠI MẬT KHẨU                                     │
+│                     Mã OTP đã gửi tới du********@domain                              │
+│                                                                                       │
+│                         [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ]                         │
+│                         [ Mật khẩu mới                    ]                           │
+│                         [ Xác nhận mật khẩu mới           ]                           │
+│                                                                                       │
+│                              [ Đổi mật khẩu ]                                         │
+│                         Chưa nhận mã? Gửi lại sau 60s                                 │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+``` text
+Success ──> /login + success notice
+Mismatch / invalid OTP ──> Inline error
+```
+
+------------------------------------------------------------------------
+
+# FRAME 28 --- Transactional Emails
+
+``` text
+┌──────────────────────────────────────────────────────────────┐
+│ ROOMFINDER                                                   │
+├──────────────────────────────────────────────────────────────┤
+│ OTP: Title / 6-digit code / 10-minute expiry / safety note  │
+│                                                              │
+│ BOOKING: Booking code / listing / dates / guests / total    │
+├──────────────────────────────────────────────────────────────┤
+│ Automated email footer                                      │
+└──────────────────────────────────────────────────────────────┘
+```
+
+------------------------------------------------------------------------
+
 # OPTIONAL --- ADMIN
 
 > Chỉ triển khai nếu rubric môn học yêu cầu **System Admin**. Host

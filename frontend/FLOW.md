@@ -201,7 +201,14 @@ The selected room, dates and guest count must survive authentication.
  |     └─ valid
  |
  v
-[Account Created]
+[OTP Email Sent]
+ |
+ +--> enter 6-digit OTP
+ +--> resend after 60 seconds
+ +--> OTP expires after 10 minutes
+ |
+ v
+[Account Verified]
  |
  +--> normal entry --> Landing
  |
@@ -232,10 +239,10 @@ The selected room, dates and guest count must survive authentication.
 [Forgot Password]
   |
   v
-[Email Sent]
+[OTP Email Sent]
   |
   v
-[Reset Password]
+[OTP + New Password]
   |
   v
 [Reset Success]
