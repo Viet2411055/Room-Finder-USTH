@@ -44,3 +44,13 @@ OTP xác thực email và OTP đặt lại mật khẩu hết hạn sau 10 phút
 - Host: `/host/dashboard`, `/host/listings`, `/host/reservations`, `/host/listings/:id/calendar`, `/host/reviews`, `/host/reviews/:id/reply`
 
 `GET /rooms` hỗ trợ phân trang và filter qua `page`, `limit`, `destination`, `checkIn`, `checkOut`, `adults`, `children`, `minPrice`, `maxPrice`, `roomTypes`, `amenities`, `minRating`, `superhostOnly`, `bedrooms`, `beds`, `sort`.
+
+## Deploy
+
+- Frontend: Vercel, project `frontend`, production `https://room-finder-usth.vercel.app` — `cd frontend && npx vercel deploy --prod`.
+- Backend + MySQL: Railway, project `room-finder-usth` — `railway up --service backend` từ thư mục gốc.
+- `frontend/vercel.json` rewrite `/api/*` sang domain Railway, nên trình duyệt luôn gọi same-origin và cookie `HttpOnly` hoạt động bình thường (Vercel đóng vai trò reverse proxy).
+
+Biến môi trường của service `backend` trên Railway: `DATABASE_URL=${{MySQL.MYSQL_URL}}`, `JWT_ACCESS_SECRET`, `JWT_REFRESH_SECRET`, `FRONTEND_ORIGIN=https://room-finder-usth.vercel.app`, `COOKIE_SECURE=true`, `SEED_DATA_DIR=/app/database/production/json`, `RAILWAY_DOCKERFILE_PATH=backend/Dockerfile` và `GMAIL_*`.
+
+Container backend khi khởi động chạy `prisma db push` → seed dữ liệu production → start server; các lần deploy sau tự bỏ qua bước seed vì DB đã có dữ liệu.
